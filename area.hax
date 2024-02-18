@@ -1,0 +1,22 @@
+; Calcul a circle area
+
+; Define PI
+PUSH B 3.141592653589793
+ASSIGN B PI
+
+; Define radius
+PUSH A 30
+ASSIGN A RADIUS
+
+; Calcul
+COPY A B
+MUL
+POP B
+MOVE C B
+MUL
+MOVE B A
+MUL
+ASSIGN C RESULT
+
+; Print the result
+PRINT C
